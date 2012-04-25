@@ -11,7 +11,6 @@
 		66E563671547DB0B00960B0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E5635D1547DB0B00960B0D /* AppDelegate.m */; };
 		66E563691547DB0B00960B0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66E563601547DB0B00960B0D /* InfoPlist.strings */; };
 		66E5636A1547DB0B00960B0D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E563621547DB0B00960B0D /* MainMenu.xib */; };
-		66E5636B1547DB0B00960B0D /* LocationSwitcher-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66E563641547DB0B00960B0D /* LocationSwitcher-Info.plist */; };
 		66E5636C1547DB0B00960B0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E563661547DB0B00960B0D /* main.m */; };
 		C3DBA54D14BD047600F636AC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DBA54C14BD047600F636AC /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -122,7 +121,7 @@
 		C3DBA53F14BD047100F636AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = C3DBA54214BD047100F636AC /* Build configuration list for PBXProject "LocationSwitcher" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -148,7 +147,6 @@
 			files = (
 				66E563691547DB0B00960B0D /* InfoPlist.strings in Resources */,
 				66E5636A1547DB0B00960B0D /* MainMenu.xib in Resources */,
-				66E5636B1547DB0B00960B0D /* LocationSwitcher-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

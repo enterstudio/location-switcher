@@ -15,10 +15,13 @@
     IBOutlet NSMenu *statusMenu;
     NSStatusItem *statusItem;
     CFStringRef current;
+    NSTimer *updateTimer;
+    NSMenuItem *ipMenuItem;
 }
 
 -(IBAction)selectLocation:(id)sender;
 -(void)changeLocation:(NSString*)aLocation;
+-(void)updateIPAddress;
 
 @property (assign) IBOutlet NSWindow *window;
 
