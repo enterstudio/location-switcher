@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6620C868154796400019D2F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6620C867154796400019D2F0 /* SystemConfiguration.framework */; };
+		66E563671547DB0B00960B0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E5635D1547DB0B00960B0D /* AppDelegate.m */; };
+		66E563691547DB0B00960B0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66E563601547DB0B00960B0D /* InfoPlist.strings */; };
+		66E5636A1547DB0B00960B0D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E563621547DB0B00960B0D /* MainMenu.xib */; };
+		66E5636B1547DB0B00960B0D /* LocationSwitcher-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66E563641547DB0B00960B0D /* LocationSwitcher-Info.plist */; };
+		66E5636C1547DB0B00960B0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E563661547DB0B00960B0D /* main.m */; };
+		C3DBA54D14BD047600F636AC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DBA54C14BD047600F636AC /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6620C867154796400019D2F0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		66E5635C1547DB0B00960B0D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		66E5635D1547DB0B00960B0D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66E563611547DB0B00960B0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66E563631547DB0B00960B0D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		66E563641547DB0B00960B0D /* LocationSwitcher-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LocationSwitcher-Info.plist"; sourceTree = "<group>"; };
+		66E563651547DB0B00960B0D /* LocationSwitcher-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LocationSwitcher-Prefix.pch"; sourceTree = "<group>"; };
+		66E563661547DB0B00960B0D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3DBA54814BD047500F636AC /* LocationSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DBA54C14BD047600F636AC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C3DBA54F14BD047600F636AC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C3DBA55014BD047600F636AC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C3DBA55114BD047600F636AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3DBA54514BD047400F636AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6620C868154796400019D2F0 /* SystemConfiguration.framework in Frameworks */,
+				C3DBA54D14BD047600F636AC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66E5635B1547DB0B00960B0D /* LocationSwitcher */ = {
+			isa = PBXGroup;
+			children = (
+				66E5635C1547DB0B00960B0D /* AppDelegate.h */,
+				66E5635D1547DB0B00960B0D /* AppDelegate.m */,
+				66E563601547DB0B00960B0D /* InfoPlist.strings */,
+				66E563621547DB0B00960B0D /* MainMenu.xib */,
+				66E563641547DB0B00960B0D /* LocationSwitcher-Info.plist */,
+				66E563651547DB0B00960B0D /* LocationSwitcher-Prefix.pch */,
+				66E563661547DB0B00960B0D /* main.m */,
+			);
+			path = LocationSwitcher;
+			sourceTree = "<group>";
+		};
+		C3DBA53D14BD047100F636AC = {
+			isa = PBXGroup;
+			children = (
+				66E5635B1547DB0B00960B0D /* LocationSwitcher */,
+				6620C867154796400019D2F0 /* SystemConfiguration.framework */,
+				C3DBA54B14BD047500F636AC /* Frameworks */,
+				C3DBA54914BD047500F636AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3DBA54914BD047500F636AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3DBA54814BD047500F636AC /* LocationSwitcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3DBA54B14BD047500F636AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3DBA54C14BD047600F636AC /* Cocoa.framework */,
+				C3DBA54E14BD047600F636AC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3DBA54E14BD047600F636AC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3DBA54F14BD047600F636AC /* AppKit.framework */,
+				C3DBA55014BD047600F636AC /* CoreData.framework */,
+				C3DBA55114BD047600F636AC /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3DBA54714BD047400F636AC /* LocationSwitcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3DBA57A14BD047900F636AC /* Build configuration list for PBXNativeTarget "LocationSwitcher" */;
+			buildPhases = (
+				C3DBA54414BD047400F636AC /* Sources */,
+				C3DBA54514BD047400F636AC /* Frameworks */,
+				C3DBA54614BD047400F636AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationSwitcher;
+			productName = NetworkLocationChanger;
+			productReference = C3DBA54814BD047500F636AC /* LocationSwitcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3DBA53F14BD047100F636AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C3DBA54214BD047100F636AC /* Build configuration list for PBXProject "LocationSwitcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3DBA53D14BD047100F636AC;
+			productRefGroup = C3DBA54914BD047500F636AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3DBA54714BD047400F636AC /* LocationSwitcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3DBA54614BD047400F636AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E563691547DB0B00960B0D /* InfoPlist.strings in Resources */,
+				66E5636A1547DB0B00960B0D /* MainMenu.xib in Resources */,
+				66E5636B1547DB0B00960B0D /* LocationSwitcher-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3DBA54414BD047400F636AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E563671547DB0B00960B0D /* AppDelegate.m in Sources */,
+				66E5636C1547DB0B00960B0D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		66E563601547DB0B00960B0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66E563611547DB0B00960B0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		66E563621547DB0B00960B0D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66E563631547DB0B00960B0D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3DBA57814BD047900F636AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C3DBA57914BD047900F636AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C3DBA57B14BD047900F636AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationSwitcher/LocationSwitcher-Prefix.pch";
+				INFOPLIST_FILE = "LocationSwitcher/LocationSwitcher-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = LocationSwitcher;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C3DBA57C14BD047900F636AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationSwitcher/LocationSwitcher-Prefix.pch";
+				INFOPLIST_FILE = "LocationSwitcher/LocationSwitcher-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = LocationSwitcher;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3DBA54214BD047100F636AC /* Build configuration list for PBXProject "LocationSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DBA57814BD047900F636AC /* Debug */,
+				C3DBA57914BD047900F636AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3DBA57A14BD047900F636AC /* Build configuration list for PBXNativeTarget "LocationSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DBA57B14BD047900F636AC /* Debug */,
+				C3DBA57C14BD047900F636AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3DBA53F14BD047100F636AC /* Project object */;
+}
