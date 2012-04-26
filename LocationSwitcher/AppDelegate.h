@@ -19,6 +19,7 @@
     CFStringRef current;
     NSMenuItem *ipMenuItem;
     PreferenceWindowController *preferenceWindowController;
+    NSWindow *preferenceWindow;
 }
 
 -(IBAction)selectLocation:(id)sender;

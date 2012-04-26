@@ -69,12 +69,16 @@
 
 -(void)openPreferences
 {
-    NSLog(@"openPreferences");
+    
     if (preferenceWindowController == NULL)
     {
+        NSLog(@"openPreferences");
         preferenceWindowController = [[PreferenceWindowController alloc] initWithWindowNibName:@"PreferenceWindow"];
+        preferenceWindow = [preferenceWindowController window];
+        [preferenceWindow setReleasedWhenClosed:FALSE];
     }
-    [NSApp runModalForWindow:[preferenceWindowController window]];
+    [preferenceWindow makeKeyAndOrderFront:self];
+//    [NSApp runModalForWindow:[preferenceWindowController window]];
 }
 
 -(IBAction)selectLocation:(id)sender
