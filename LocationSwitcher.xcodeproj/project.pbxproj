@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6620C868154796400019D2F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6620C867154796400019D2F0 /* SystemConfiguration.framework */; };
+		66A4AA6015496AD20044C766 /* PreferenceWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66A4AA5E15496AD20044C766 /* PreferenceWindow.xib */; };
+		66A4AA6415496BE00044C766 /* PreferenceWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A4AA6315496BE00044C766 /* PreferenceWindowController.m */; };
 		66E563671547DB0B00960B0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E5635D1547DB0B00960B0D /* AppDelegate.m */; };
 		66E563691547DB0B00960B0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66E563601547DB0B00960B0D /* InfoPlist.strings */; };
 		66E5636A1547DB0B00960B0D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E563621547DB0B00960B0D /* MainMenu.xib */; };
@@ -17,6 +19,9 @@
 
 /* Begin PBXFileReference section */
 		6620C867154796400019D2F0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		66A4AA5F15496AD20044C766 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PreferenceWindow.xib; sourceTree = "<group>"; };
+		66A4AA6215496BE00044C766 /* PreferenceWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceWindowController.h; sourceTree = "<group>"; };
+		66A4AA6315496BE00044C766 /* PreferenceWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceWindowController.m; sourceTree = "<group>"; };
 		66E5635C1547DB0B00960B0D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66E5635D1547DB0B00960B0D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		66E563611547DB0B00960B0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -54,6 +59,9 @@
 				66E563641547DB0B00960B0D /* LocationSwitcher-Info.plist */,
 				66E563651547DB0B00960B0D /* LocationSwitcher-Prefix.pch */,
 				66E563661547DB0B00960B0D /* main.m */,
+				66A4AA5E15496AD20044C766 /* PreferenceWindow.xib */,
+				66A4AA6215496BE00044C766 /* PreferenceWindowController.h */,
+				66A4AA6315496BE00044C766 /* PreferenceWindowController.m */,
 			);
 			path = LocationSwitcher;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 			files = (
 				66E563691547DB0B00960B0D /* InfoPlist.strings in Resources */,
 				66E5636A1547DB0B00960B0D /* MainMenu.xib in Resources */,
+				66A4AA6015496AD20044C766 /* PreferenceWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,12 +168,21 @@
 			files = (
 				66E563671547DB0B00960B0D /* AppDelegate.m in Sources */,
 				66E5636C1547DB0B00960B0D /* main.m in Sources */,
+				66A4AA6415496BE00044C766 /* PreferenceWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		66A4AA5E15496AD20044C766 /* PreferenceWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66A4AA5F15496AD20044C766 /* en */,
+			);
+			name = PreferenceWindow.xib;
+			sourceTree = "<group>";
+		};
 		66E563601547DB0B00960B0D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -234,8 +252,10 @@
 		C3DBA57B14BD047900F636AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocationSwitcher/LocationSwitcher-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "LocationSwitcher/LocationSwitcher-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = LocationSwitcher;
@@ -246,10 +266,13 @@
 		C3DBA57C14BD047900F636AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocationSwitcher/LocationSwitcher-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "LocationSwitcher/LocationSwitcher-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = LocationSwitcher;
 				WRAPPER_EXTENSION = app;
 			};

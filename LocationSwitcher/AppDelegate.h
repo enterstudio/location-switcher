@@ -9,17 +9,21 @@
 #import <Cocoa/Cocoa.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 
+#import "PreferenceWindowController.h"
+
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
     NSArray *locations;
     IBOutlet NSMenu *statusMenu;
     NSStatusItem *statusItem;
     CFStringRef current;
-    NSTimer *updateTimer;
     NSMenuItem *ipMenuItem;
+    PreferenceWindowController *preferenceWindowController;
 }
 
 -(IBAction)selectLocation:(id)sender;
+-(void)openNetworkLocations;
+-(void)openPreferences;
 -(void)changeLocation:(NSString*)aLocation;
 -(void)updateIPAddress;
 

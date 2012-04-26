@@ -46,10 +46,13 @@
     [self updateIPAddress];
     
     [statusMenu addItem: [NSMenuItem separatorItem]];
-    [statusMenu addItemWithTitle:@"Edit Locations..." action:@selector(openSystemPreference:) keyEquivalent:@","];
+    [statusMenu addItemWithTitle:@"Network Locations" action:@selector(openNetworkLocations) keyEquivalent:@""];
     
     [statusMenu addItem: [NSMenuItem separatorItem]];
-    [statusMenu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@"a"];
+    [statusMenu addItemWithTitle:@"Preferences" action:@selector(openPreferences) keyEquivalent:@","];
+    
+    [statusMenu addItem: [NSMenuItem separatorItem]];
+    [statusMenu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@"q"];
     
     current = SCNetworkSetGetName(SCNetworkSetCopyCurrent(prefs));
     [[statusMenu itemWithTitle:(__bridge NSString*)current] setEnabled:FALSE];
@@ -58,9 +61,20 @@
     [statusItem setAction:@selector(selectLocation:)];    	
 }
     
--(void)openSystemPreference:(NSString*)aLocation
+-(void)openNetworkLocations
 {
+    NSLog(@"openNetworkLocations");
     [[NSWorkspace sharedWorkspace] openFile:@"/System/Library/PreferencePanes/Network.prefPane"];
+}
+
+-(void)openPreferences
+{
+    NSLog(@"openPreferences");
+    if (preferenceWindowController == NULL)
+    {
+        preferenceWindowController = [[PreferenceWindowController alloc] initWithWindowNibName:@"PreferenceWindow"];
+    }
+    [NSApp runModalForWindow:[preferenceWindowController window]];
 }
 
 -(IBAction)selectLocation:(id)sender
